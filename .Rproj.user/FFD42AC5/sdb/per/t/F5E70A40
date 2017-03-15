@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#include <Rcpp.h>\nusing namespace Rcpp;\n\n// This is a simple example of exporting a C++ function to R. You can\n// source this function into an R session using the Rcpp::sourceCpp\n// function (or via the Source button on the editor toolbar). Learn\n// more about Rcpp at:\n//\n//   http://www.rcpp.org/\n//   http://adv-r.had.co.nz/Rcpp.html\n//   http://gallery.rcpp.org/\n//\n\n// [[Rcpp::export]]\ndouble learn_progress_C(NumericVector x){\n      int n = x.size();\n      double total = 0;\n      for(int i; i < n; ++i) {\n            total += pow(x[i] - 0.5, 2.0);\n      }\n      return total/n;\n}\n",
+    "created" : 1489561708225.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4027364264",
+    "id" : "F5E70A40",
+    "lastKnownWriteTime" : 1489561721,
+    "last_content_update" : 1489561721022,
+    "path" : "C:/Users/tomli/Desktop/TTTrcpp/src/learn_progress_C.cpp",
+    "project_path" : "src/learn_progress_C.cpp",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "cpp"
+}

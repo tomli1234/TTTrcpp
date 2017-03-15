@@ -1,0 +1,56 @@
+[
+    {
+        "definitions" : [
+            {
+                "column" : 5,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
+                "kind" : 6,
+                "line" : 15,
+                "name" : "check_which_state_C(NumericMatrix, NumericVector)",
+                "parent_name" : "",
+                "usr" : "c:@F@check_which_state_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+            },
+            {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
+                "kind" : 6,
+                "line" : 30,
+                "name" : "check_which_state_2_C(NumericMatrix, NumericMatrix)",
+                "parent_name" : "",
+                "usr" : "c:@F@check_which_state_2_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#"
+            }
+        ],
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
+        "file_last_write" : 1489559252
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 8,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/learn_progress_C.cpp",
+                "kind" : 6,
+                "line" : 15,
+                "name" : "learn_progress_C(NumericVector)",
+                "parent_name" : "",
+                "usr" : "c:@F@learn_progress_C#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+            }
+        ],
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/learn_progress_C.cpp",
+        "file_last_write" : 1489561721
+    },
+    {
+        "definitions" : [
+            {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/which_equal_C.cpp",
+                "kind" : 6,
+                "line" : 18,
+                "name" : "which_equal_C(NumericVector, double)",
+                "parent_name" : "",
+                "usr" : "c:@F@which_equal_C#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#d#"
+            }
+        ],
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/which_equal_C.cpp",
+        "file_last_write" : 1489559091
+    }
+]
