@@ -1,14 +1,14 @@
 {
     "collab_server" : "",
-    "contents" : "#include <Rcpp.h>\nusing namespace Rcpp;\n\n// This is a simple function using Rcpp that creates an R list\n// containing a character vector and a numeric vector.\n//\n// Learn more about how to use Rcpp at:\n//\n//   http://www.rcpp.org/\n//   http://adv-r.had.co.nz/Rcpp.html\n//\n// and browse examples of code using Rcpp at:\n//\n//   http://gallery.rcpp.org/\n//\n\n// [[Rcpp::export]]\nNumericVector which_equal_C(NumericVector x, double k){\n      int n = x.size();\n      NumericVector match;\n      for(int i = 0; i < n; ++i) {\n            if(x[i] == k) {\n                  match.push_back(i + 1);\n            }\n      }\n      return match;\n}\n",
+    "contents" : "#include <Rcpp.h>\nusing namespace Rcpp;\n\n\n// [[Rcpp::export]]\nNumericVector which_equal_C(NumericVector x, double k){\n      int n = x.size();\n      NumericVector match;\n      for(int i = 0; i < n; ++i) {\n            if(x[i] == k) {\n                  match.push_back(i + 1);\n            }\n      }\n      return match;\n}\n",
     "created" : 1489559328894.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3126153719",
+    "hash" : "2416138170",
     "id" : "C0DC71FD",
-    "lastKnownWriteTime" : 1489559091,
-    "last_content_update" : 1489559091,
+    "lastKnownWriteTime" : 1490257156,
+    "last_content_update" : 1490257156201,
     "path" : "C:/Users/tomli/Desktop/TTTrcpp/src/which_equal_C.cpp",
     "project_path" : "src/which_equal_C.cpp",
     "properties" : {

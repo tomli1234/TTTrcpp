@@ -9,6 +9,14 @@ learn_progress_C <- function(x) {
     .Call('TTTrcpp_learn_progress_C', PACKAGE = 'TTTrcpp', x)
 }
 
+reflect_row_C <- function(x) {
+    .Call('TTTrcpp_reflect_row_C', PACKAGE = 'TTTrcpp', x)
+}
+
+rotate_90_C <- function(x) {
+    .Call('TTTrcpp_rotate_90_C', PACKAGE = 'TTTrcpp', x)
+}
+
 which_equal_C <- function(x, k) {
     .Call('TTTrcpp_which_equal_C', PACKAGE = 'TTTrcpp', x, k)
 }
