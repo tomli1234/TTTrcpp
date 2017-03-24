@@ -3,13 +3,18 @@ using namespace Rcpp;
 
 // [[Rcpp::export]]
 double check_status_C(NumericVector x, int turn){
+      NumericMatrix y, x_mat(5 ,5, x.begin());
 
       y = x_mat;
       // Check row
+      for(int i=0; i<5; i++) {
+            int consec = 1;
+            for(int j=1; j<5; j++) {
                   if(y(i, j) > -1){
                         if(y(i, j) == y(i, j-1) & y(i, j) != -1) {
                               consec += 1;
                         }
+                        if(consec == 5) {
                               return 1 - abs(y(i, j) - turn);
                         }
                   }
@@ -17,10 +22,14 @@ double check_status_C(NumericVector x, int turn){
       }
       // Check column
       y = transpose(x_mat);
+      for(int i=0; i<5; i++) {
+            int consec = 1;
+            for(int j=1; j<5; j++) {
                   if(y(i, j) > -1){
                         if(y(i, j) == y(i, j-1) & y(i, j) != -1) {
                               consec += 1;
                         }
+                        if(consec == 5) {
                               return 1 - abs(y(i, j) - turn);
                         }
                   }
@@ -38,6 +47,7 @@ double check_status_C(NumericVector x, int turn){
       out = out1 + out2;
       list1 = unique(out);
       for(int i = 0; i<list1.size(); i++) {
+            int consec = 1;
             int x_prev = -2;
             for(int j =0; j <x.size(); j++) {
                   if(out[j] == list1[i] & x[j] != -1) {
@@ -46,6 +56,7 @@ double check_status_C(NumericVector x, int turn){
                         }
                         x_prev = x[j];
                   }
+                  if(consec == 5) {
                         return 1 - abs(x[j] - turn);
                   }
             }
@@ -63,6 +74,8 @@ double check_status_C(NumericVector x, int turn){
 
       y = revX;
       NumericVector x2;
+      for(int i=0; i<5; i++) {
+            for(int j=0; j<5; j++) {
                   x2.push_back(y(i,j));
             }
       }
@@ -73,6 +86,7 @@ double check_status_C(NumericVector x, int turn){
       out = out1 + out2;
       list1 = unique(out);
       for(int i = 0; i<list1.size(); i++) {
+            int consec = 1;
             int x_prev = -2;
             for(int j =0; j <x.size(); j++) {
                   if(out[j] == list1[i]) {
@@ -81,6 +95,7 @@ double check_status_C(NumericVector x, int turn){
                         }
                         x_prev = x[j];
                   }
+                  if(consec == 5) {
                         return 1 - abs(x[j] - turn);
                   }
             }
@@ -88,6 +103,7 @@ double check_status_C(NumericVector x, int turn){
 
       //Check draw
       int draw = 0;
+      for(int i=0; i<25; i++) {
             if(x[i] == -1) {
                   draw += 1;
             }
