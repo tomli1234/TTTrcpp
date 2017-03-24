@@ -2,6 +2,21 @@
     {
         "definitions" : [
             {
+                "column" : 8,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_status_C.cpp",
+                "kind" : 6,
+                "line" : 5,
+                "name" : "check_status_C(NumericVector, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@check_status_C#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#"
+            }
+        ],
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_status_C.cpp",
+        "file_last_write" : 1490326976
+    },
+    {
+        "definitions" : [
+            {
                 "column" : 5,
                 "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
                 "kind" : 6,
@@ -14,14 +29,14 @@
                 "column" : 15,
                 "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
                 "kind" : 6,
-                "line" : 20,
+                "line" : 21,
                 "name" : "check_which_state_2_C(NumericMatrix, NumericMatrix)",
                 "parent_name" : "",
                 "usr" : "c:@F@check_which_state_2_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#S0_#"
             }
         ],
         "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/check_which_state_2_C.cpp",
-        "file_last_write" : 1490257161
+        "file_last_write" : 1490327856
     },
     {
         "definitions" : [

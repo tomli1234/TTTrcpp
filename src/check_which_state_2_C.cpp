@@ -6,11 +6,12 @@ int check_which_state_C(NumericMatrix x, NumericVector x2){
       int i = 0;
       int count = 0;
       int n = x.rows();
-      while(count < 9 && i < n) {
+      int ncol = x.cols();
+      while(count < ncol && i < n) {
             count = sum(x(i, _) == x2);
             i += 1;
       }
-      if(count < 9){
+      if(count < ncol){
             i = 0;
       }
       return i;

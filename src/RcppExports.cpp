@@ -5,6 +5,18 @@
 
 using namespace Rcpp;
 
+// check_status_C
+double check_status_C(NumericVector x, int turn);
+RcppExport SEXP TTTrcpp_check_status_C(SEXP xSEXP, SEXP turnSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type turn(turnSEXP);
+    rcpp_result_gen = Rcpp::wrap(check_status_C(x, turn));
+    return rcpp_result_gen;
+END_RCPP
+}
 // check_which_state_2_C
 NumericVector check_which_state_2_C(NumericMatrix x, NumericMatrix x2);
 RcppExport SEXP TTTrcpp_check_which_state_2_C(SEXP xSEXP, SEXP x2SEXP) {
