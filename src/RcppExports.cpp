@@ -74,3 +74,15 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// which_equal_C_2
+NumericVector which_equal_C_2(NumericVector x, NumericVector k);
+RcppExport SEXP TTTrcpp_which_equal_C_2(SEXP xSEXP, SEXP kSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type k(kSEXP);
+    rcpp_result_gen = Rcpp::wrap(which_equal_C_2(x, k));
+    return rcpp_result_gen;
+END_RCPP
+}

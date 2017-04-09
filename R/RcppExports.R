@@ -25,3 +25,7 @@ which_equal_C <- function(x, k) {
     .Call('TTTrcpp_which_equal_C', PACKAGE = 'TTTrcpp', x, k)
 }
 
+which_equal_C_2 <- function(x, k) {
+    .Call('TTTrcpp_which_equal_C_2', PACKAGE = 'TTTrcpp', x, k)
+}
+
