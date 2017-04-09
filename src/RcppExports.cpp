@@ -5,6 +5,17 @@
 
 using namespace Rcpp;
 
+// base3_to_decimal
+double base3_to_decimal(NumericVector x);
+RcppExport SEXP TTTrcpp_base3_to_decimal(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(base3_to_decimal(x));
+    return rcpp_result_gen;
+END_RCPP
+}
 // check_status_C
 double check_status_C(NumericVector x, int turn);
 RcppExport SEXP TTTrcpp_check_status_C(SEXP xSEXP, SEXP turnSEXP) {
