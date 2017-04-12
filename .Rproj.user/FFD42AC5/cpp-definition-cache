@@ -72,16 +72,16 @@
         "definitions" : [
             {
                 "column" : 15,
-                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflect_row_C.cpp",
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
                 "kind" : 6,
                 "line" : 5,
-                "name" : "reflect_row_C(NumericMatrix)",
+                "name" : "reflection_C(NumericMatrix, int)",
                 "parent_name" : "",
-                "usr" : "c:@F@reflect_row_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+                "usr" : "c:@F@reflection_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#"
             }
         ],
-        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflect_row_C.cpp",
-        "file_last_write" : 1491623610
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
+        "file_last_write" : 1491988746
     },
     {
         "definitions" : [

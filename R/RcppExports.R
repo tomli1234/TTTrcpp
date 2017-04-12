@@ -17,8 +17,8 @@ learn_progress_C <- function(x) {
     .Call('TTTrcpp_learn_progress_C', PACKAGE = 'TTTrcpp', x)
 }
 
-reflect_row_C <- function(x) {
-    .Call('TTTrcpp_reflect_row_C', PACKAGE = 'TTTrcpp', x)
+reflection_C <- function(x, direction) {
+    .Call('TTTrcpp_reflection_C', PACKAGE = 'TTTrcpp', x, direction)
 }
 
 rotate_90_C <- function(x) {
