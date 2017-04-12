@@ -51,15 +51,14 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// reflection_C
-NumericMatrix reflection_C(NumericMatrix x, int direction);
-RcppExport SEXP TTTrcpp_reflection_C(SEXP xSEXP, SEXP directionSEXP) {
+// equivalent
+NumericMatrix equivalent(NumericVector x);
+RcppExport SEXP TTTrcpp_equivalent(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
-    Rcpp::traits::input_parameter< int >::type direction(directionSEXP);
-    rcpp_result_gen = Rcpp::wrap(reflection_C(x, direction));
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(equivalent(x));
     return rcpp_result_gen;
 END_RCPP
 }
