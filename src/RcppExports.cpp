@@ -40,6 +40,41 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// reflection_C
+NumericMatrix reflection_C(NumericMatrix x, int direction);
+RcppExport SEXP TTTrcpp_reflection_C(SEXP xSEXP, SEXP directionSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericMatrix >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type direction(directionSEXP);
+    rcpp_result_gen = Rcpp::wrap(reflection_C(x, direction));
+    return rcpp_result_gen;
+END_RCPP
+}
+// equivalent_C
+NumericMatrix equivalent_C(NumericVector x);
+RcppExport SEXP TTTrcpp_equivalent_C(SEXP xSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    rcpp_result_gen = Rcpp::wrap(equivalent_C(x));
+    return rcpp_result_gen;
+END_RCPP
+}
+// revert_symmetry_C
+NumericVector revert_symmetry_C(NumericVector x, int m);
+RcppExport SEXP TTTrcpp_revert_symmetry_C(SEXP xSEXP, SEXP mSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
+    Rcpp::traits::input_parameter< int >::type m(mSEXP);
+    rcpp_result_gen = Rcpp::wrap(revert_symmetry_C(x, m));
+    return rcpp_result_gen;
+END_RCPP
+}
 // learn_progress_C
 double learn_progress_C(NumericVector x);
 RcppExport SEXP TTTrcpp_learn_progress_C(SEXP xSEXP) {
@@ -48,17 +83,6 @@ BEGIN_RCPP
     Rcpp::RNGScope rcpp_rngScope_gen;
     Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
     rcpp_result_gen = Rcpp::wrap(learn_progress_C(x));
-    return rcpp_result_gen;
-END_RCPP
-}
-// equivalent
-NumericMatrix equivalent(NumericVector x);
-RcppExport SEXP TTTrcpp_equivalent(SEXP xSEXP) {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    Rcpp::traits::input_parameter< NumericVector >::type x(xSEXP);
-    rcpp_result_gen = Rcpp::wrap(equivalent(x));
     return rcpp_result_gen;
 END_RCPP
 }

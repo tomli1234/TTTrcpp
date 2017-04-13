@@ -56,6 +56,48 @@
     {
         "definitions" : [
             {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/equivalent_C.cpp",
+                "kind" : 6,
+                "line" : 5,
+                "name" : "mat_to_vec_C(NumericMatrix)",
+                "parent_name" : "",
+                "usr" : "c:@F@mat_to_vec_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+            },
+            {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/equivalent_C.cpp",
+                "kind" : 6,
+                "line" : 19,
+                "name" : "reflection_C(NumericMatrix, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@reflection_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#"
+            },
+            {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/equivalent_C.cpp",
+                "kind" : 6,
+                "line" : 37,
+                "name" : "equivalent_C(NumericVector)",
+                "parent_name" : "",
+                "usr" : "c:@F@equivalent_C#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
+            },
+            {
+                "column" : 15,
+                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/equivalent_C.cpp",
+                "kind" : 6,
+                "line" : 63,
+                "name" : "revert_symmetry_C(NumericVector, int)",
+                "parent_name" : "",
+                "usr" : "c:@F@revert_symmetry_C#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#"
+            }
+        ],
+        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/equivalent_C.cpp",
+        "file_last_write" : 1492076999
+    },
+    {
+        "definitions" : [
+            {
                 "column" : 8,
                 "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/learn_progress_C.cpp",
                 "kind" : 6,
@@ -67,39 +109,6 @@
         ],
         "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/learn_progress_C.cpp",
         "file_last_write" : 1491623610
-    },
-    {
-        "definitions" : [
-            {
-                "column" : 15,
-                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
-                "kind" : 6,
-                "line" : 5,
-                "name" : "reflection_C(NumericMatrix, int)",
-                "parent_name" : "",
-                "usr" : "c:@F@reflection_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#I#"
-            },
-            {
-                "column" : 15,
-                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
-                "kind" : 6,
-                "line" : 22,
-                "name" : "mat_to_vec_C(NumericMatrix)",
-                "parent_name" : "",
-                "usr" : "c:@F@mat_to_vec_C#$@N@Rcpp@C@Matrix>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
-            },
-            {
-                "column" : 15,
-                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
-                "kind" : 6,
-                "line" : 36,
-                "name" : "equivalent(NumericVector)",
-                "parent_name" : "",
-                "usr" : "c:@F@equivalent#$@N@Rcpp@C@Vector>#VI14#@N@Rcpp@CT>1#T@PreserveStorage#"
-            }
-        ],
-        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/reflection_C.cpp",
-        "file_last_write" : 1492002629
     },
     {
         "definitions" : [
