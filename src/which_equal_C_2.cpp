@@ -11,6 +11,7 @@ NumericVector which_equal_C_2(NumericVector x, NumericVector k){
             for(int i = 0; i < n; ++i) {
                   if(x[i] == k[j]) {
                         match = i + 1;
+                        break;
                   }
             }
             output[j] = match;
