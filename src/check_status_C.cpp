@@ -3,13 +3,14 @@ using namespace Rcpp;
 
 // [[Rcpp::export]]
 double check_status_C(NumericVector x, int turn){
-      NumericMatrix y, x_mat(5 ,5, x.begin());
+      double game_size = sqrt(x.size());
+      NumericMatrix y, x_mat(game_size ,game_size, x.begin());
 
       y = x_mat;
       // Check row
-      for(int i=0; i<5; i++) {
+      for(int i=0; i<game_size; i++) {
             int consec = 1;
-            for(int j=1; j<5; j++) {
+            for(int j=1; j<game_size; j++) {
                   if(y(i, j) > -1){
                         if(y(i, j) == y(i, j-1) & y(i, j) != -1) {
                               consec += 1;
@@ -22,9 +23,9 @@ double check_status_C(NumericVector x, int turn){
       }
       // Check column
       y = transpose(x_mat);
-      for(int i=0; i<5; i++) {
+      for(int i=0; i<game_size; i++) {
             int consec = 1;
-            for(int j=1; j<5; j++) {
+            for(int j=1; j<game_size; j++) {
                   if(y(i, j) > -1){
                         if(y(i, j) == y(i, j-1) & y(i, j) != -1) {
                               consec += 1;
@@ -74,8 +75,8 @@ double check_status_C(NumericVector x, int turn){
 
       y = revX;
       NumericVector x2;
-      for(int i=0; i<5; i++) {
-            for(int j=0; j<5; j++) {
+      for(int i=0; i<game_size; i++) {
+            for(int j=0; j<game_size; j++) {
                   x2.push_back(y(i,j));
             }
       }
@@ -103,7 +104,7 @@ double check_status_C(NumericVector x, int turn){
 
       //Check draw
       int draw = 0;
-      for(int i=0; i<25; i++) {
+      for(int i=0; i<game_size*game_size; i++) {
             if(x[i] == -1) {
                   draw += 1;
             }

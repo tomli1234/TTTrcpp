@@ -97,16 +97,6 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// main
-int main();
-RcppExport SEXP TTTrcpp_main() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(main());
-    return rcpp_result_gen;
-END_RCPP
-}
 // which_equal_C
 NumericVector which_equal_C(NumericVector x, double k);
 RcppExport SEXP TTTrcpp_which_equal_C(SEXP xSEXP, SEXP kSEXP) {

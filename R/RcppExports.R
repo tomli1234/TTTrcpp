@@ -33,10 +33,6 @@ rotate_90_C <- function(x) {
     .Call('TTTrcpp_rotate_90_C', PACKAGE = 'TTTrcpp', x)
 }
 
-main <- function() {
-    .Call('TTTrcpp_main', PACKAGE = 'TTTrcpp')
-}
-
 which_equal_C <- function(x, k) {
     .Call('TTTrcpp_which_equal_C', PACKAGE = 'TTTrcpp', x, k)
 }
