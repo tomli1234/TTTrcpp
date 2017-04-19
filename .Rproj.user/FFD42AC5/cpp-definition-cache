@@ -128,21 +128,6 @@
     {
         "definitions" : [
             {
-                "column" : 5,
-                "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/sum4.cpp",
-                "kind" : 6,
-                "line" : 8,
-                "name" : "main",
-                "parent_name" : "",
-                "usr" : "c:@F@main#"
-            }
-        ],
-        "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/sum4.cpp",
-        "file_last_write" : 1492573791
-    },
-    {
-        "definitions" : [
-            {
                 "column" : 15,
                 "file" : "C:/Users/tomli/Desktop/TTTrcpp/src/which_equal_C.cpp",
                 "kind" : 6,
